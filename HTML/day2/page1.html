@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <style>
+        legend {
+            text-align: left;
+            font-weight: bold;
+            font-size: larger;
+            padding-left: 4px;
+        }
+
+        .total {
+            background-color: aliceblue;
+            /* border: 2px solid black; */
+            border-style: inset;
+            padding: 5px 20px 5px 20px  ;
+        }
+
+        h1 {
+            background-color: rgba(52, 193, 200, 0.911);
+            text-align: center;
+            color: white;
+            margin: 5px 400px 5px 400px;
+            height: 60px;
+            padding-top: 10px;
+
+        }
+
+        .Account {
+            margin: 5px 400px 5px 400px;
+        }
+
+        fieldset {
+            border-radius: 10px;
+        }
+
+        .icon {
+            background-color: rgba(52, 193, 200, 0.911);
+            width: 22px;
+            height: 22px;
+            border-color: rgba(52, 193, 200, 0.911);
+            border-radius: 50% 50% 50% 0%;
+            display: inline-block;
+        }
+
+        .personal {
+            margin: 5px 400px 5px 400px;
+        }
+
+        .company {
+            margin: 5px 400px 5px 400px;
+        }
+
+        .contact {
+            margin: 5px 400px 5px 400px;
+        }
+
+        .submit {
+            margin: 8px 400px 8px 400px;
+            border-color: transparent;
+            font-size: large;
+            padding-top: 8px;
+        }
+
+        .cancel {
+            background-color: rgba(52, 193, 200, 0.911);
+            margin: 5px 5px 5px 5px;
+            border-color: transparent;
+            font-size: large;
+            color: white;
+            width: 150px;
+            height: 70px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form class="total" method="post" action="./page2.html">
+        <div>
+            <h1>
+                Contact Us
+            </h1>
+
+        </div>
+        <div class="Account">
+            <fieldset>
+                <table border="1px" bordercolor="aliceblue" cellpadding="5" cellspacing="5">
+                    <legend>
+                        <div class="icon"></div>Account Information
+                    </legend>
+
+                    <tr>
+                        <td><label for="Username">Username</label></td>
+                        <td>
+                            <input type="text" id="Username" name="Username" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ConfirmPass">Confirm Password</label></td>
+                        <td>
+                            <input type="password" id="password" name="ConfirmPass" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="ccn">Credit Card Number</label></td>
+                        <td><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                                autocomplete="cc-number" maxlength="19" required />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div class="personal">
+            <fieldset>
+                <table border="1px" bordercolor="aliceblue" cellpadding="5" cellspacing="5">
+                    <legend>
+                        <div class="icon"></div> Personal Information
+                    </legend>
+                    <tr>
+                        <td><label for="Name">Name</label></td>
+                        <td> <input type="text" name="Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BDate">Date of Birth </label></td>
+                        <td><input type="date" name="BDate" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="FavColor">Favorite Color</label></td>
+                        <td><input type="color" name="FavColor"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">Profile Photo</label></td>
+                        <td><input type="file" name="photo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="browser">Favorite Browser</label></td>
+                        <td><input type="text" list="browser" />
+                            <datalist id="browser">
+                                <option value="Chrome" />
+                                <option value="FireFox" />
+                                <option value="Edge" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div class="company">
+            <fieldset>
+                <table border="1px" bordercolor="aliceblue" cellpadding="5" cellspacing="5">
+                    <legend>
+                        <div class="icon"></div> Company Information
+                    </legend>
+                    <tr>
+                        <td><label for="no.Emp">No. of Employees</label></td>
+                        <td><input type="number" name="no.Emp"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Revenue">Estimated Revenue</label></td>
+                        <td><input type="range" name="Revenue" min="1" max="10"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div class="contact">
+            <fieldset>
+                <table border="1px" bordercolor="aliceblue" cellpadding="5" cellspacing="5">
+                    <legend>
+                        <div class="icon"></div> Contact Information
+                    </legend>
+                    <tr>
+                        <td><label for="email">Email Address</label></td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td><input type="test" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="url">Website URL</label></td>
+                        <td><input type="url" name="url"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+
+        <div class="submit">
+            <center>
+                <fieldset>
+                    <table border="1px" bordercolor="aliceblue" cellpadding="5" cellspacing="5">
+                        <tr>
+                            <input class="cancel" type="submit" name="submit_bt">
+                            <input class="cancel" type="button" name="cancel" value="Cancel" />
+
+                        </tr>
+                    </table>
+                </fieldset>
+            </center>
+        </div>
+    </form>
+
+</body>
+
+</html>
