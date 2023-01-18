@@ -1,0 +1,56 @@
+<! <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Home page3</title>
+        <style>
+            table {
+                width: 100%;
+                border: 1px solid;
+                background-color: aliceblue;
+
+            }
+
+            tr,
+            td {
+                border: 1px solid;
+                height: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1 style="font-weight: bold;">Factorial of 1 to 10</h1>
+        <input type="button" value="find factorial for.." id="find_fcr" onclick="clickbt()">
+        <div>
+            <table>
+                <script>
+                    var clickbt = function () {
+                        var input = window.prompt("Enter the number");
+                        var fuc = 1;
+                        var j;
+                        abs_input = Math.abs(input);
+                        for (j = 2; j <= abs_input; j++) {
+                            fuc = j * fuc;
+                        }
+                        if (input >= 0) { window.alert(fuc); }
+                        else {
+                            window.alert("-" + fuc);
+                        }
+
+                    }
+
+                    for (i = 0, fact = 1; i < 11; i++, fact *= i) {
+                        document.writeln("<tr>");
+                        document.write("<td>" + i + "!" + "</td>");
+                        document.write("<td>" + fact + "</td>");
+                        document.writeln("</tr>");
+                    }
+
+                </script>
+            </table>
+        </div>
+    </body>
+
+    </html>

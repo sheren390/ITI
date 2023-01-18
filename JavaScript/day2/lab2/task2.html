@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>page2 Home</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        .String_box {
+            width: 300px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .output {
+            background-color: rgb(255, 255, 255);
+            width: 350px;
+            height: 350px;
+            padding: 25px 15px 20px 15px;
+            font-size: large;
+            font-weight: 100;
+
+        }
+
+        .output2 {
+            background-color: rgb(255, 255, 255);
+            font-size: large;
+            font-weight: 100;
+            width: 150px;
+            height: 35px;
+            padding-left: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./task2.js"></script>
+    <h2>Enter a sentence to splite into words</h2>
+    <div>
+        <input class="String_box" type="text" name="sentence" id="sentence">
+        split by <input class="split_box" type="text" name="split_str" id="spliter">
+        <input type="button" value="Split" id="splitbt"  onclick="fn();" />
+    </div>
+    <h2>The sentence split into words is</h2>
+    <div class="output" id="demo">
+        
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h2>The first 10 characters of the input string are </h2>
+                </td>
+                <td>
+                    <div class="output2" id="demo2"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

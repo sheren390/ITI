@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>page 1</title>
+    <style>
+        body {
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: aliceblue;
+        }
+      
+
+        h1 {
+            padding-top: 20px;
+            font-weight: bold;
+            font-size: 250%;
+            background-color: rgb(89, 152, 206);
+
+        }
+
+        .String_box {
+            width: 300px;
+            height: 70px;
+            margin-left: 10px;
+        }
+
+        table {
+            font-size: large;
+        }
+        .output{
+            background-color: white;
+            border-color: black;
+            width: 150px;
+            border-width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./task1.js"></script>
+    <div>
+        <h1>The string to search is:</h1>
+    </div>
+    <div>
+        <input class="String_box" type="text" name="my string" id="string_input">
+    </div>
+    <br>
+    <div >
+        Enter substring to search for <input type="text" id="substring">
+        <input type="button" id="search_bt" value="Search" onclick="fn();" />
+        At index <input type="text" id="index">
+    </div>
+    <br>
+    <div>
+        <table>
+            <tr>
+                <td>First occurrence located at index</td>
+                <td><div class="output" id="demo1">....</div></td>
+            </tr>
+            <tr>
+                <td>last occurrence located at index</td>
+               <td><div class="output" id="demo2">....</div></td>
+            </tr>
+            <tr>
+                <td>Frist occurrence from your index located at index</td>
+                <td><div class="output" id="demo3">....</div></td>
+            </tr>
+            <tr>
+                <td>last occurrence from your index located at index</td>
+                <td><div class="output" id="demo4">....</div></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
