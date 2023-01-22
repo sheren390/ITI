@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page2</title>
+    <style>
+      body{
+        font-size: 1.5rem;
+        background-color: aliceblue;
+      }
+      .btn{
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Your Favorite browser is <input type="text" class="btn" id="favbrowser"></td>
+      </tr>
+      <tr>
+        <td>
+          Select your favorite browser
+          <select name="Choose" id="choosebrw">
+            <option disabled selected>Choose your browser</option>
+            <option value="javahotbrowser">JavaHotBrowser</option>
+            <option value="internetexplorer">InternetExplorer</option>
+            <option value="microsofteclipse">MicrosoftEclipse</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" class="btn" value="Add" id="add_bt" onclick="add()" />
+          <input type="button" class="btn" value="Delete" id="delete_bt" onclick="Delete()"/>
+        </td>
+      </tr>
+    </table>
+    <script src="./page2.js"></script>
+  </body>
+</html>
